@@ -1,5 +1,6 @@
 import '../models/destination_model.dart';
 import '../models/hotel_model.dart';
+import '../models/review_model.dart';
 
 List<Destination> mockDestinations = [
   Destination(name: 'Quốc', activityCount: 90, imageUrl: 'https://tuyengiao.hagiang.gov.vn/upload/64711/20240401/grab76937cac_dao_o_phu_quoc_1_1632974771.jpg'),
@@ -21,4 +22,9 @@ List<Hotel> mockHotels = [
     rating: 5.0,
     imageUrl: 'https://www.pullmanvungtau.com/wp-content/uploads/sites/23/2016/07/Deluxe-Executive.jpg',
   ),
+];
+
+List<Review> mockReviews = [
+  Review(username: "Nguyễn Văn A", comment: "Phòng rất sạch sẽ, view đẹp tuyệt vời!", rating: 5.0, date: "15/12/2023"),
+  Review(username: "Trần Thị B", comment: "Nhân viên nhiệt tình, đồ ăn sáng ngon.", rating: 4.5, date: "10/12/2023"),
 ];

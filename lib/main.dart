@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart'; // Import màn hình bạn vừa tạo
+import 'screens/home_screen.dart';
+import 'screens/login_screen.dart'; // 1. BẮT BUỘC phải có dòng này
 
 void main() {
   runApp(const TravelApp());
@@ -12,13 +13,13 @@ class TravelApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Travel App',
-      debugShowCheckedModeBanner: false, // Tắt chữ Debug ở góc màn hình
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        useMaterial3: true, // Bật giao diện Material 3 mới nhất cho đẹp
+        useMaterial3: true,
       ),
-      // Đây là dòng quan trọng nhất: Chỉ định app bắt đầu từ HomeScreen
-      home: const HomeScreen(),
-    );
-  }
-}
+      // Chỉ định màn hình bắt đầu là LoginScreen
+        home: const HomeScreen(),
+    ); // Đóng MaterialApp
+  } // Đóng hàm build
+} // Đóng class TravelApp

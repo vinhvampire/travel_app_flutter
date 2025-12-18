@@ -19,14 +19,17 @@ class HotelCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Ảnh khách sạn bo góc trên
-          ClipRRect(
-            borderRadius: const BorderRadius.vertical(top: Radius.circular(15)),
-            child: Image.network(
-              hotel.imageUrl,
-              height: 180,
-              width: double.infinity,
-              fit: BoxFit.cover,
+          // Hiệu ứng Hero cho ảnh khách sạn
+          Hero(
+            tag: hotel.imageUrl, // Tag phải trùng với bên DetailScreen
+            child: ClipRRect(
+              borderRadius: const BorderRadius.vertical(top: Radius.circular(15)),
+              child: Image.network(
+                hotel.imageUrl,
+                height: 180,
+                width: double.infinity,
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           Padding(
