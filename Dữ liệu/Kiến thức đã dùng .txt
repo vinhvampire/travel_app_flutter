@@ -1,0 +1,17 @@
+Model (hotel_model.dart, destination_model.dart): Là các bản thiết kế (Class). Nó quy định một Khách sạn hay Địa điểm phải có những thông tin gì (Tên, Ảnh, Giá, Đánh giá).
+
+Mock Data (mock_data.dart): Là danh sách các đối tượng cụ thể được tạo ra từ Model để làm dữ liệu mẫu hiển thị lên App.
+
+main.dart: Điểm khởi đầu của ứng dụng, nơi thiết lập màu sắc chủ đạo (Theme) và màn hình bắt đầu.
+
+HomeScreen (StatefulWidget): Màn hình chính có khả năng thay đổi trạng thái (chuyển Tab).
+
+Tách File (Refactoring): Bạn đã đưa các Tab (Trang chủ, Đặt chỗ, Thông báo, Tài khoản) và Trang chi tiết ra các file riêng biệt để code sạch sẽ, dễ quản lý và không bị rối.
+
+Scaffold: Cái khung của một trang giấy (có đầu, thân và chân).
+
+Column & Row: Sắp xếp mọi thứ theo hàng dọc hoặc hàng ngang.
+
+ListView.builder: Công cụ mạnh mẽ nhất để hiển thị danh sách dài (cuộn ngang cho địa điểm, cuộn dọc cho khách sạn).
+
+Stack & Positioned: Kỹ thuật xếp lớp, cho phép bạn đặt một thứ (như nút trái tim) đè lên trên một thứ khác (như ảnh khách sạn)
